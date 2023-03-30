@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "casenumber": "1",
+      "casetitle": "Case Title 1",
+      "casedescription": "Case description that is quite long and will most likely take more than one row",
+      "clues": [
+        {
+          "farmacycluenumber": "1",
+          "newspaperstandcluenumber": "2",
+          "hotelcluenumber": "3"
+        }
+      ]
+    },
+    {
+      "casenumber": "2",
+      "casetitle": "Case Title 2",
+      "casedescription": "Case description that is quite long and will most likely take more than one row",
+      "clues": [
+        {
+          "farmacycluenumber": "4",
+          "newspaperstandcluenumber": "5",
+          "hotelcluenumber": "6"
+        }
+      ]
+    }
+  ]
+}

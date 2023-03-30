@@ -1,14 +1,14 @@
-import Case from './Case';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import CaseCard from './CaseCard';
+import cases from '../data/Cases.json';
 
 function CasesContainer() {
+
     return (     
         <div className="container mx-auto">
-            <div className="grid grid-cols-4 gap-6">
-                <Case caseNumber={1} caseTitle={"The Adventures of the Unholy Man"} />
-                <Case caseNumber={2} caseTitle={"Another Case Title"} />
+            <div className="grid grid-cols-4 gap-6">             
+                {cases.cases.map((mycase) => {
+                    return <CaseCard mycase={mycase} key={mycase.casetitle} />
+                })}
             </div>
         </div>
     )

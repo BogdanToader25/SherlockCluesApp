@@ -40,6 +40,11 @@ main {
         height: 100%;
     }
 
+.centered {
+    text-align: center;
+}
+
+
 .rankings {
     width: 800px;
     display: flex;

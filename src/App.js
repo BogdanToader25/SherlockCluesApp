@@ -17,7 +17,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<CasesContainer />} />
                     <Route path="/cases" element={<CasesContainer />} />
-                    <Route path="/locations" element={<LocationsContainer />} />
+                    <Route path="/casedetails" element={<CaseDetails />} />
                 </Routes>
             </Router>
         </div>
