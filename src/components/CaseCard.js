@@ -1,14 +1,18 @@
 import Card from 'react-bootstrap/Card';
 import image from '../images/Sherlock.png';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from '../../node_modules/react-router-dom/dist/index';
 
 const CaseCard = ({mycase}) => {
 
     const navigate = useNavigate();
 
     const navigateToLocations = () => {
-        navigate("/locations")
-    }
+        navigate("/casedetails", {
+            state: {
+                mycase: mycase
+            }
+        });
+    };
 
     return (
         

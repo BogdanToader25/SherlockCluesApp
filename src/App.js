@@ -2,9 +2,9 @@ import './App.css';
 import './index.css';
 import NavMenu from './components/NavMenu';
 import CasesContainer from './components/CasesContainer';
+import CaseDetails from './components/CaseDetails';
 import './custom.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LocationsContainer from './components/LocationsContainer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
