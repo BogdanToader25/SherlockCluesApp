@@ -3,7 +3,7 @@
     {
       "casenumber": "1",
       "casetitle": "Case Title 1",
-      "casedescription": "Case description that is quite long and will most likely take more than one row",
+      "casedescription": "Humanity is ready to take their current Mars exploration strategy to the next level. For now, the rover would just report whether there is a viable colonisation spot on the Mars chart. After that, a team of humans would be deployed there, but without any infrastructure to begin with, by the time they would arrive. On the other hand, what if the rover would do something about it while it’s waiting for the humans to arrive? What if the rover could not only explore, but also… colonise?",
       "clues": [
         {
           "farmacycluenumber": "1",
