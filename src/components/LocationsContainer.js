@@ -1,18 +1,38 @@
 import Location from './Location';
+import BankImage from '../images/Bank.PNG';
+import CarriagesImage from '../images/CarriagesDepot.PNG';
+import ChemistImage from '../images/Chemist.PNG';
+import DocksImage from '../images/Docks.PNG';
+import HotelImage from '../images/Hotel.PNG';
+import LocksmithImage from '../images/Locksmith.PNG';
+import MuseumImage from '../images/Museum.PNG';
+import NewsImage from '../images/NewsAgent.PNG';
+import ParkImage from '../images/Park.PNG';
+import PawnImage from '../images/PawnBroker.PNG';
+import ScotlandYardImage from '../images/ScotlandYard.PNG';
+import TabacconistImage from '../images/Tabacconist.PNG';
+import TavernImage from '../images/Tavern.PNG';
+import TheaterImage from '../images/Theater.PNG';
 
-const LocationsContainer = () => {
+const LocationsContainer = ({mycase }) => {
 
     return (
-        <div className="container mx-auto">
-            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-3 rounded inline-flex">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>Back to cases</span>
-            </button>
-            <div className="grid grid-cols-4 gap-6">
-                <Location locationName={"Farmacie"} clueNumber={1} />
-                <Location locationName={"Magazinul de ziare"} clueNumber={2} />
+        <div className="container mx-auto">            
+            <div className="grid grid-cols-3 gap-6">
+                <Location locationName={"Banca"} clueNumber={mycase.clueNumber} image={BankImage} mycase={mycase} />
+                <Location locationName={"Depoul de Trasuri"} clueNumber={mycase.clueNumber} image={CarriagesImage} mycase={mycase} />
+                <Location locationName={"Farmacie"} clueNumber={mycase.clueNumber} image={ChemistImage} mycase={mycase} />
+                <Location locationName={"Docuri"} clueNumber={mycase.clueNumber} image={DocksImage} mycase={mycase} />
+                <Location locationName={"Hotel"} clueNumber={mycase.clueNumber} image={HotelImage} mycase={mycase} />
+                <Location locationName={"Lacatuserie"} clueNumber={mycase.clueNumber} image={LocksmithImage} mycase={mycase} />
+                <Location locationName={"Muzeu"} clueNumber={mycase.clueNumber} image={MuseumImage} mycase={mycase} />
+                <Location locationName={"Magazinul de Ziare"} clueNumber={mycase.clueNumber} image={NewsImage} mycase={mycase} />
+                <Location locationName={"Parc"} clueNumber={mycase.clueNumber} image={ParkImage} mycase={mycase} />
+                <Location locationName={"Magazin de Amanet"} clueNumber={mycase.clueNumber} image={PawnImage} mycase={mycase} />
+                <Location locationName={"Scotland Yard"} clueNumber={mycase.clueNumber} image={ScotlandYardImage} mycase={mycase} />
+                <Location locationName={"Tutungerie"} clueNumber={mycase.clueNumber} image={TabacconistImage} mycase={mycase} />
+                <Location locationName={"Taverna"} clueNumber={mycase.clueNumber} image={TavernImage} mycase={mycase} />
+                <Location locationName={"Teatru"} clueNumber={mycase.clueNumber} image={TheaterImage} mycase={mycase} />
             </div>
         </div>
     )

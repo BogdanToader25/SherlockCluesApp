@@ -1,9 +1,21 @@
 import Card from 'react-bootstrap/Card';
-import image from '../images/Sherlock.png';
+import { useNavigate } from '../../node_modules/react-router-dom/dist/index';
 
-const Location = ({locationName, clueNumber }) => {
+const Location = ({ locationName, clueNumber, image, mycase }) => {
+
+
+    const navigate = useNavigate();
+
+    const navigateToLocationClue = () => {
+        navigate("/locationclue", {
+            state: {
+                mycase: mycase,
+                cluenumber: clueNumber
+            }
+        });
+    };
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} onClick={navigateToLocationClue}>
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{locationName}</Card.Title>
