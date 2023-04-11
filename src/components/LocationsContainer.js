@@ -19,20 +19,20 @@ const LocationsContainer = ({mycase }) => {
     return (
         <div className="container mx-auto">            
             <div className="grid grid-cols-3 gap-6">
-                <Location locationName={"Banca"} clueNumber={mycase.clueNumber} image={BankImage} mycase={mycase} />
-                <Location locationName={"Depoul de Trasuri"} clueNumber={mycase.clueNumber} image={CarriagesImage} mycase={mycase} />
-                <Location locationName={"Farmacie"} clueNumber={mycase.clueNumber} image={ChemistImage} mycase={mycase} />
-                <Location locationName={"Docuri"} clueNumber={mycase.clueNumber} image={DocksImage} mycase={mycase} />
-                <Location locationName={"Hotel"} clueNumber={mycase.clueNumber} image={HotelImage} mycase={mycase} />
-                <Location locationName={"Lacatuserie"} clueNumber={mycase.clueNumber} image={LocksmithImage} mycase={mycase} />
-                <Location locationName={"Muzeu"} clueNumber={mycase.clueNumber} image={MuseumImage} mycase={mycase} />
-                <Location locationName={"Magazinul de Ziare"} clueNumber={mycase.clueNumber} image={NewsImage} mycase={mycase} />
-                <Location locationName={"Parc"} clueNumber={mycase.clueNumber} image={ParkImage} mycase={mycase} />
-                <Location locationName={"Magazin de Amanet"} clueNumber={mycase.clueNumber} image={PawnImage} mycase={mycase} />
-                <Location locationName={"Scotland Yard"} clueNumber={mycase.clueNumber} image={ScotlandYardImage} mycase={mycase} />
-                <Location locationName={"Tutungerie"} clueNumber={mycase.clueNumber} image={TabacconistImage} mycase={mycase} />
-                <Location locationName={"Taverna"} clueNumber={mycase.clueNumber} image={TavernImage} mycase={mycase} />
-                <Location locationName={"Teatru"} clueNumber={mycase.clueNumber} image={TheaterImage} mycase={mycase} />
+                <Location locationName={"Banca"} cluenumber={mycase.clues[0].bankcluenumber} image={BankImage} />
+                <Location locationName={"Depoul de Trasuri"} cluenumber={mycase.clues[0].carriagescluenumber} image={CarriagesImage} />
+                <Location locationName={"Farmacie"} cluenumber={mycase.clues[0].chemistcluenumber} image={ChemistImage} />
+                <Location locationName={"Docuri"} cluenumber={mycase.clues[0].dockscluenumber} image={DocksImage} />
+                <Location locationName={"Hotel"} cluenumber={mycase.clues[0].hotelcluenumber} image={HotelImage} />
+                <Location locationName={"Lacatuserie"} cluenumber={mycase.clues[0].locksmithcluenumber} image={LocksmithImage} />
+                <Location locationName={"Muzeu"} cluenumber={mycase.clues[0].museumcluenumber} image={MuseumImage} />
+                <Location locationName={"Magazinul de Ziare"} cluenumber={mycase.clues[0].newsagentcluenumber} image={NewsImage} />
+                <Location locationName={"Parc"} cluenumber={mycase.clues[0].parkcluenumber} image={ParkImage} />
+                <Location locationName={"Magazin de Amanet"} cluenumber={mycase.clues[0].pawnbrokercluenumber} image={PawnImage} />
+                <Location locationName={"Scotland Yard"} cluenumber={mycase.clues[0].scotlandyardcluenumber} image={ScotlandYardImage} />
+                <Location locationName={"Tutungerie"} cluenumber={mycase.clues[0].tabacconistcluenumber} image={TabacconistImage} />
+                <Location locationName={"Taverna"} cluenumber={mycase.clues[0].taverncluenumber} image={TavernImage} />
+                <Location locationName={"Teatru"} cluenumber={mycase.clues[0].theatercluenumber} image={TheaterImage} />
             </div>
         </div>
     )

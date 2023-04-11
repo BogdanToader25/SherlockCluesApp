@@ -1,16 +1,16 @@
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from '../../node_modules/react-router-dom/dist/index';
 
-const Location = ({ locationName, clueNumber, image, mycase }) => {
+const Location = ({ locationName, cluenumber, image }) => {
 
 
     const navigate = useNavigate();
+    console.log("Location cluenumber=" + cluenumber);
 
     const navigateToLocationClue = () => {
         navigate("/locationclue", {
             state: {
-                mycase: mycase,
-                cluenumber: clueNumber
+                cluenumber: cluenumber
             }
         });
     };

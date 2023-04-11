@@ -6,6 +6,7 @@ import CaseDetails from './components/CaseDetails';
 import './custom.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LocationClue from './components/LocationClue';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/" element={<CasesContainer />} />
                     <Route path="/cases" element={<CasesContainer />} />
                     <Route path="/casedetails" element={<CaseDetails />} />
+                    <Route path="/locationclue" element={<LocationClue />} />
                 </Routes>
             </Router>
         </div>
