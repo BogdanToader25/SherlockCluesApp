@@ -5,7 +5,6 @@ const Location = ({ locationName, cluenumber, image }) => {
 
 
     const navigate = useNavigate();
-    console.log("Location cluenumber=" + cluenumber);
 
     const navigateToLocationClue = () => {
         navigate("/locationclue", {

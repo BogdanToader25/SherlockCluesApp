@@ -5,8 +5,6 @@ const CaseDetails = () => {
 
     const location = useLocation();
 
-    console.log(location.state.mycase);
-
     return (
         <div className="bg-white dark:bg-gray-800 overflow-hidden relative">
             <div className="text-start m-20 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">

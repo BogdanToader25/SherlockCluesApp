@@ -4,17 +4,12 @@ import clues from '../data/Clues.json';
 const LocationClue = () => {
 
     const location = useLocation();
-
-    console.log(clues)
-    console.log(location.state)
     const navigate = useNavigate();
 
     const goBack = () => {
         navigate(-1);
     };
 
-    const clue = clues.clues.filter(i => i.ClueNumber == location.state.cluenumber)[0];
-    console.log(clue);
     return (
         <div>
             <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-3 rounded inline-flex" onClick={goBack }>
@@ -25,7 +20,7 @@ const LocationClue = () => {
             </button> 
 
             <p className="text-xl mt-4 text-gray-400">
-                {clue.ClueDescription}
+                {clues.clues.filter(i => i.ClueNumber == location.state.cluenumber)[0].ClueDescription}
             </p>
         </div>
     );
