@@ -5,7 +5,7 @@ function CasesContainer() {
 
     return (     
         <div className="container mx-auto">
-            <div className="grid grid-cols-4 gap-6">             
+            <div className="grid lg:grid-cols-4 lg:gap-6 sm:grid-cols-1 sm:gap-2">             
                 {cases.cases.map((mycase) => {
                     return <CaseCard mycase={mycase} key={mycase.casetitle} />
                 })}

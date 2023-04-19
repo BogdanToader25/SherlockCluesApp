@@ -17,8 +17,8 @@ import TheaterImage from '../images/Theater.PNG';
 const LocationsContainer = ({mycase }) => {
 
     return (
-        <div className="container mx-auto">            
-            <div className="grid grid-cols-3 gap-6">
+                  
+        <div className="grid place-items-center space-y-4 lg:grid-cols-3 lg:gap-6 md:grid-cols-2 md:gap-4 sm:grid-cols-1 sm:gap-2">
                 <Location locationName={"Banca"} cluenumber={mycase.clues[0].bankcluenumber} image={BankImage} />
                 <Location locationName={"Depoul de Trasuri"} cluenumber={mycase.clues[0].carriagescluenumber} image={CarriagesImage} />
                 <Location locationName={"Farmacie"} cluenumber={mycase.clues[0].chemistcluenumber} image={ChemistImage} />
@@ -34,7 +34,7 @@ const LocationsContainer = ({mycase }) => {
                 <Location locationName={"Taverna"} cluenumber={mycase.clues[0].taverncluenumber} image={TavernImage} />
                 <Location locationName={"Teatru"} cluenumber={mycase.clues[0].theatercluenumber} image={TheaterImage} />
             </div>
-        </div>
+        
     )
 
 }
